@@ -2,7 +2,7 @@ import Type from './Type'
 import Abilities from './Abilities'
 export default function Pokemon(props) {
     return (
-        <>
+        <div className='pokemon'>
             <h3>{props.name}</h3>
             <img src={props.image} alt={props.name + " image"}></img>
             <Type 
@@ -13,6 +13,6 @@ export default function Pokemon(props) {
             <Abilities 
                 abilities={props.abilities}
             />
-        </>
+        </div>
     )
 } 
