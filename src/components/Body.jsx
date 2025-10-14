@@ -1,4 +1,5 @@
-import data from './components/data.js'
+import data from './data.js'
+import Pokemon from './Pokemon.jsx'
 
 export default function Body() {
     const creatures = data.map((creature) => {
@@ -9,4 +10,12 @@ export default function Body() {
             />
         )
     })
+
+    return (
+        <>
+            <main>
+                {creatures}
+            </main>
+        </>
+    )
 }
