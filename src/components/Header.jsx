@@ -1,5 +1,5 @@
 export default function Header() {
     return (
-        <h1>Pokemon Collection</h1>
+        <h1>Pokémon Collection</h1>
     )
 }
