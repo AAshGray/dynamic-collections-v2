@@ -1,4 +1,5 @@
 import Type from './Type'
+import Abilities from './Abilities'
 export default function Pokemon(props) {
     return (
         <>
@@ -9,9 +10,9 @@ export default function Pokemon(props) {
             />
             <p>HP: {props.hp}</p>
             <p>Attack: {props.attack} Defense: {props.defense}</p>
-            {/* <Abilities 
+            <Abilities 
                 abilities={props.abilities}
-            /> */}
+            />
         </>
     )
 } 
