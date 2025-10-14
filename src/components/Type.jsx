@@ -10,6 +10,6 @@ export default function Type(props) {
         }
     }
     return (
-        <p>Type: {typeList}</p>
+        <p><span className="label">Type:</span> {typeList}</p>
     )
 }

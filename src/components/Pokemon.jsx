@@ -3,13 +3,13 @@ import Abilities from './Abilities'
 export default function Pokemon(props) {
     return (
         <div className='pokemon'>
-            <h3>{props.name}</h3>
+            <span className="label"><h3>{props.name}</h3></span>
             <img src={props.image} alt={props.name + " image"}></img>
             <Type 
                 type= {props.type}
             />
-            <p>HP: {props.hp}</p>
-            <p>Attack: {props.attack} Defense: {props.defense}</p>
+            <p><span className="label">HP:</span> {props.hp}</p>
+            <p><span className="label">Attack:</span> {props.attack} <span className="label">Defense:</span> {props.defense}</p>
             <Abilities 
                 abilities={props.abilities}
             />
